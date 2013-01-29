@@ -26,7 +26,7 @@ good luck :)
 
 To install, put all files into a zip-archive …
 
-zip -r "../pulse control.plasmoid" .
+zip -r "../audioswitch.plasmoid" .
 
 … and use plasmapkg to install ist. With -r you can remove it.
-plasmapkg -i "pulse control.plasmoid"
+plasmapkg -i "audioswitch.plasmoid"
