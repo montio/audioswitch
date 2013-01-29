@@ -1,0 +1,32 @@
+IMPORTANT, WARNING, YOU COULD DIE!
+This is a quick and dirty hack. There is NO WARRANTY for anything. Well, expect one thing:
+You have to modify the code, otherwise it won't work :)
+
+You have to modify the code to make it working with your hardware.
+You find all places in the code by searching for "IMPORTANT"
+
+If you use PULSEAUDIO:
+    First, you have to specify that you want to use PULSEAUDIO by setting in the constructor the api-variable as follwed:
+    self.api = API.PULSEAUDIO
+
+    Next you have to configure the sink-ports. All information about the sinkname and its port can be listed by the following command:
+    $ pacmd list-sinks
+    modify the pacmd-calles in the SwitchToSpeaker function and the SwitchToHeadphone function
+
+If you use ALSA:
+    First, you have to specify that you want to use ALSA by setting in the constructor the api-variable as follwed:
+    self.api = API.ALSA
+
+    Next you have configure the mixer-names for your speaker and your headphone.
+    You can find out the names by running the alsamixer and check the behavior of the sliders :)
+    modify the alsaaudio.Mixer-arguments in the SwitchToSpeaker function and the SwitchToHeadphone function
+
+good luck :)
+
+
+To install, put all files into a zip-archive …
+
+zip -r "../pulse control.plasmoid" .
+
+… and use plasmapkg to install ist. With -r you can remove it.
+plasmapkg -i "pulse control.plasmoid"

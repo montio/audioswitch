@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment=Buttons to switch between internal and external speakers
+Encoding=UTF-8
+Icon=audio-card
+Keywords=pulseaudio pulse audio alsa switch speaker
+Name=audioswitch
+Type=Service
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Ralf Stemmer
+X-KDE-PluginInfo-Category=Utilities
+X-KDE-PluginInfo-Email=ralf.stemmer@gmx.net
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=PulseControl
+X-KDE-PluginInfo-Version=1.3
+X-KDE-PluginInfo-Website=
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=python
+X-Plasma-MainScript=code/pcmain.py
+X-Plasma-RemoteLocation=
