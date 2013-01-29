@@ -5,6 +5,7 @@ You have to modify the code, otherwise it won't work :)
 You have to modify the code to make it working with your hardware.
 You find all places in the code by searching for "IMPORTANT"
 
+
 If you use PULSEAUDIO:
     First, you have to specify that you want to use PULSEAUDIO by setting in the constructor the api-variable as follwed:
     self.api = API.PULSEAUDIO
@@ -12,6 +13,7 @@ If you use PULSEAUDIO:
     Next you have to configure the sink-ports. All information about the sinkname and its port can be listed by the following command:
     $ pacmd list-sinks
     modify the pacmd-calles in the SwitchToSpeaker function and the SwitchToHeadphone function
+
 
 If you use ALSA:
     First, you have to specify that you want to use ALSA by setting in the constructor the api-variable as follwed:
@@ -22,6 +24,7 @@ If you use ALSA:
     modify the alsaaudio.Mixer-arguments in the SwitchToSpeaker function and the SwitchToHeadphone function
 
 good luck :)
+
 
 
 To install, put all files into a zip-archive …
